@@ -17,7 +17,7 @@ public:
 	void show() const;
 	void deposit(double dep);
 	void withdraw(double minus);
-}
+};
 
 #endif // !TASK1_H_
 

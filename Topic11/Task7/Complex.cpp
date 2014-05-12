@@ -15,10 +15,7 @@ Complex::~Complex()
 
 Complex Complex::operator+(const Complex & c)
 {
-	Complex tmp;
-	tmp.real = real + c.real;
-	tmp.imag = imag + c.imag;
-	return tmp;
+	return Complex(real + c.real, imag + c.imag);
 }
 
 Complex Complex::operator-(const Complex & c)

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib> // for rand() and srand()
 #include <ctime> // for time()
-#include "queue.h"
+#include "../Task6/Queue2.h"
 const int MIN_PER_HR = 60;
 bool newcustomer(double x); // is there a new customer?
 int main()

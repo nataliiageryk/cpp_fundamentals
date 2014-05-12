@@ -46,8 +46,8 @@ Cow & Cow::operator=(const Cow & c)
 	strncpy(name,c.name,SIZE);
 	
 	delete [] hobby;
-	int len = strlen(c.hobby+1);
-	hobby = new char[len];
+	int len = strlen(c.hobby);
+	hobby = new char[len+1];
 	strcpy(hobby,c.hobby);
 	hobby[len] = '\0';
 	

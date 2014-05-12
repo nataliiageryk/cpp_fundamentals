@@ -67,7 +67,7 @@
     <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="..\Task6\Queue2.cpp" />
     <ClCompile Include="Task5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

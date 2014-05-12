@@ -3,11 +3,15 @@
 Stack::Stack(int n) // creates stack with n elements
 {
 	if (n <= MAX)
-	pitems = new Item[n];
-	else 
+	{
+		pitems = new Item[n];
+		size = n;
+	}
+	else
+	{
 		pitems = new Item[MAX];
-
-	size = n;
+		size = MAX;
+	}	
 	top = 0;
 }
 

@@ -77,4 +77,6 @@ ostream & operator<<(ostream & os, const Stonewt & st)
 	{
 		cout << st.pounds << " pounds\n";
 	}
+
+	return os;
 }

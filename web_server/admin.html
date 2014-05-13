@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Admin page</title>
+</head>
+
+<body>
+<form>
+
+
+username: <input type="text" name="username" value="%username%">
+
+
+<input type="hidden" name="admin">
+<input id="password" type="hidden" name="pass" value="">
+<input type="submit" value="Submit">
+</form>
+<script>
+	var pass;
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == "pass") {
+            pass = decodeURIComponent(pair[1]);
+        }
+    }
+	document.getElementById("password").setAttribute("value",pass);
+</script>
+</body></html>
